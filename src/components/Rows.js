@@ -39,16 +39,15 @@ if(movies.length < 1){
                 
                 movies?.map(
                     (movie) =>
+                    (
                       (isLargeRow && movie.poster_path) ||
-                      (!isLargeRow && movie.backdrop_path) && 
+                      (!isLargeRow && movie.backdrop_path)) && 
                         (   <img 
                             className={`row_poster ${isLargeRow && "row_posterLarge"}`}
                             key={movie.id}
                             src={`${baseUrl}${
                                 isLargeRow? movie.poster_path : movie.backdrop_path}`}
-                            alt={movie.name}/>
-                        
-                        
+                            alt={movie.name}/>                        
                     )
                 )
             }

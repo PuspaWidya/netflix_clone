@@ -1,15 +1,1 @@
-column ke bawah
-row ke kanan
-width : lebar
-height : panjang
-
-
-
-width:100%
-object-fit:
-cover - cropping image sesuai width & height
-contain - entire image visible
-scale-down - give max height & width dimension according original dimension of image
-
-
-line-height : memberikan space paragraph atas bawah
+link deploy : https://netflix-clone-mita.web.app/
